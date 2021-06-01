@@ -15,17 +15,17 @@ https://codepen.io/vaibhavi123/pen/WNpdmyK?editors=1100
     7. What is an id? 
     - An id attribute is a unique identifier which should be used only once in an element.
     8. What elements can I add an id to? 
-    An id can be used on any element.
+   - An id can be used on any element.
     9. How many times can I use the same id on a page? 
-    mostly used once
+    -mostly used once
     10. What is a class? 
-    class is also an attribute used on any element
+    -class is also an attribute used on any element
     11. What elements can I add a class to? 
-    we can add class to any alaement
+    -we can add class to any alaement
     12. How many times can I use the same class on a page? 
-    We can use the same class a number of times
+    -We can use the same class a number of times
     13. How do I get my link to open in a new tab?
-    we can add target="_blank" in the element opening tag
+    -we can add target="_blank" in the element opening tag
     14. What is the alt attribute in the image tag used for? 
     -alt attribute is used to add information if in case image is not displayed
     15. How do I reference an id?
@@ -35,35 +35,79 @@ https://codepen.io/vaibhavi123/pen/WNpdmyK?editors=1100
     17. What is CSS used for? 
     - CSS is used for styling a page
     18. How to we select an element? Example - every h2 on the page
-    h2{
+    -h2{
 
     }
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
-    a class can be given to many elements for styling but id can be used for just one element .
+    -a class can be given to many elements for styling but id can be used for just one element .
     20. How do we select classes in CSS?
     -by using .notation
     21. How do we select a p element with a single class of “human””?
+    -p.human
     22. What is a parent child selector? When would this be useful? 
+    -parent child selector is like the main element as a parent and the element inside it as a child like how nested elements works.
     23. How do you select all links within a div with the class of sidebar?
+    -a.sidebar
     24. What is a pseudo selector?
+    - A pseudo-class is used to define a special state of an element.
     25. What do we use the change the spacing between lines?
+    -we can use line-height.
     26. What do we use to change the spacing between letters?
+    -we can use the letter-spaacing property
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    - by using the uppercase
     28. How do I add a 1px border around my div that is dotted and black?
+    - div{
+        border: dotted 1px black;
+    }
     29. How do I select everything on the page? 
+    -   *{
+
+    }
     30. How do I write a comment in CSS?
+     - /* */
+
     31. How do I find out what file I am in, when I am using the command line? 
+    - pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
-    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    - ls 
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    - rm filename 
     34. Why should I use version control? 
+    - through version control we can keep track on  the work and it helps explore the changes 
     35. How often should I commit to github?
+    - ideally it should be twice, like once for working branch and the other to merge
     36. What is the command we would use to push our repo up to github? 
+    - git push -u origin "branch-name"
     37. Walk me through Lambda's git flow. 
+    -first we need to fork to create a copy of repo
+    next we need to check whether it has our name
+    next we should clone it and triple check it if it has our name
+    then we should open the gitbash and go to the directory where we want to clone 
+    next we need to type git clone link
+    after that we need to go into the directory by cd command
+    Now we have to create a branch git checkout -b origin "firstname-lastname"
+    we can now start working in
+    to add and commit changes we write git add .  and git commit -m "commit message"
+    Now to push those changes git push -m origin "firstname-lastname"
+    Now we can submit a pullrequest
+    Go back to your forked repo in github 
+    check that its on your name 
+    after selecting the braanch name we can click new pullrequest which redirects to new pull request page 
+    we need to select the base repository and change it to forked repo 
+    and at the last we can create pull request
+
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+     inline elements continues in the same line while the block level elements always start on a new line as for eg: p and div are block level elements while span is an inline element
     2. What happens when an element is positioned absolutely? 
+    -it can be said like an element is positioned in a fixed position.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    -i can write display: inline-flex
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    - div p <h1>--<h6> are block level elements  <a> and <span> are inline elements and img is the only inline-block element
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    -The Css boxmodel is the box that wraps around each HTML element. 
